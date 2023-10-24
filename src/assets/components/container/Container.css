@@ -1,4 +1,17 @@
 .container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+.side-container{
+    margin: 0 15px;
+}
+.side-container h3{
+    background-color: rgb(222, 220, 218);
+    padding: 15px;
+    border-radius: 8px;
+    color: rgb(150, 28, 250);
+    text-align: center;
+    border: 2px solid rgb(150, 28, 250);
+    position: sticky;
+    top: 10px;
 }

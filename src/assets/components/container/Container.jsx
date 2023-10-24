@@ -5,12 +5,18 @@ import Blogs from '../Blogs/Blogs';
 const Container = () => {
 
    const [blogs, setBlogs] = useState([])
+   const [time,setTime] = useState(0)
 
    useEffect(() => {
     fetch('fakeData.json')
     .then(res => res.json())
     .then(data => setBlogs(data))
    },[])
+
+  const handleTime = minute => {
+    const newTime = time +  minute;
+    setTime(newTime)
+  }
 
     return (
         <div className='container'>
@@ -19,11 +25,12 @@ const Container = () => {
                 blogs.map(blog => <Blogs
                 key={blog.id}
                 blog={blog}
+                handleTime={handleTime}
                 ></Blogs>)
                }
             </div>
             <div className="side-container">
-              <h2>side</h2>
+              <h3>Spent time on read : {time}</h3>
             </div>
         </div>
     );

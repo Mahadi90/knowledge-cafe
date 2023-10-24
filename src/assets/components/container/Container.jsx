@@ -9,6 +9,7 @@ const Container = () => {
    const [time,setTime] = useState(0)
    const [bookMark, setBookmark] = useState([])
    const [count, setCount] = useState(0)
+   
 
    useEffect(() => {
     fetch('fakeData.json')
@@ -20,12 +21,12 @@ const Container = () => {
     const newTime = time +  minute;
     setTime(newTime)
   }
-
   const handleBookMark = title => {
     const allBookmark = [...bookMark,title]
     const newCount = count + 1;
+    
     setBookmark(allBookmark)
-     setCount(newCount)
+    setCount(newCount)
   }
   console.log(bookMark)
     return (

@@ -1,7 +1,9 @@
 import React from "react";
 import "./Blogs.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookmark } from '@fortawesome/free-solid-svg-icons'
 
-const Blogs = ({ blog, handleTime }) => {
+const Blogs = ({ blog, handleTime, handleBookMark }) => {
   // console.log(blog)
   const { publish_date, reading_duration, thumbnail, title, author } = blog;
   const { name, picture } = author;
@@ -18,7 +20,9 @@ const Blogs = ({ blog, handleTime }) => {
           </div>
         </div>
 
-        <div className="duration"><p>{reading_duration} Minutes</p></div>
+        <div className="duration"><p>{reading_duration} Minutes</p>
+        <button onClick={() => handleBookMark(title)}><FontAwesomeIcon className="btn-icon" icon={faBookmark} /></button>
+        </div>
       </div>
       <h2>{title}</h2>
       <p className="gray">#begginers <span>#Programming</span></p>

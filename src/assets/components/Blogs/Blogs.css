@@ -43,3 +43,14 @@
     background-color: transparent;
     cursor: pointer;
 }
+.duration{
+    display: flex;
+    align-items: center;
+}
+.duration p{
+    margin-right: 5px;
+}
+.duration .btn-icon{
+   cursor: pointer;
+   border: none;
+}

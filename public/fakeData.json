@@ -1,0 +1,47 @@
+[
+    {
+      "id": 1,
+      "title": "The Art of Writing",
+      "author": {
+        "name": "John Doe",
+        "picture": "author1.jpg"
+      },
+      "thumbnail": "blog1.jpg",
+      "publish_date": "2023-10-23",
+      "reading_duration": "10 minutes"
+    },
+    {
+      "id": 2,
+      "title": "Web Development Best Practices",
+      "author": {
+        "name": "Jane Smith",
+        "picture": "author2.jpg"
+      },
+      "thumbnail": "blog2.jpg",
+      "publish_date": "2023-10-22",
+      "reading_duration": "15 minutes"
+    },
+    {
+      "id": 3,
+      "title": "Machine Learning Fundamentals",
+      "author": {
+        "name": "David Wilson",
+        "picture": "author3.jpg"
+      },
+      "thumbnail": "blog3.jpg",
+      "publish_date": "2023-10-21",
+      "reading_duration": "20 minutes"
+    },
+    {
+      "id": 4,
+      "title": "Cooking Tips and Tricks",
+      "author": {
+        "name": "Emily Brown",
+        "picture": "author4.jpg"
+      },
+      "thumbnail": "blog4.jpg",
+      "publish_date": "2023-10-20",
+      "reading_duration": "12 minutes"
+    }
+  ]
+  
